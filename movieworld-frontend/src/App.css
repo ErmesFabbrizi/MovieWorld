@@ -1,0 +1,92 @@
+/* App.css */
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+input.form-control {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+input.form-control::placeholder {
+  color: #aaa;
+}
+
+.movie-card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: #121212;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e6b800;
+}
+
+.notification {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 9999;
+}
+
+h2.welcome-message {
+  text-align: center;
+  color: #ffcc00;
+  font-weight: 700;
+}
+
+.watchlist-title {
+  color: #ffcc00;
+}
+
+.ratio {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
