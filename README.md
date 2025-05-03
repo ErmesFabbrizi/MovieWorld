@@ -14,20 +14,22 @@ Tecnologia	Descrizione
 🐱‍🏍 LocalStorage	Per salvare la watchlist utente
 🎙 React Icons	Icone moderne e intuitive
 ✨ Custom CSS	Stile personalizzato, ispirato a Netflix
+🌐 MongoDB	Database NoSQL per salvare i dati dell'utente e della watchlist
+🖥 Express	Framework web per gestire le richieste e le API del backend
+
 📦 Come Clonare il Progetto
 Segui questi semplici passi! 🚶‍♂️👇
 
-
-# 1. Clona il repository
+Clona il repository
 git clone https://github.com/tuo-username/movie-world.git
 
-# 2. Entra nella cartella del progetto
+Entra nella cartella del progetto
 cd movie-world
 
-# 3. Installa tutte le dipendenze
+Installa tutte le dipendenze
 npm install
 
-# 4. Avvia l'app in modalità sviluppo
+Avvia l'app in modalità sviluppo
 npm start
 Il progetto sarà disponibile su http://localhost:3000 🚀
 
@@ -54,6 +56,7 @@ Mantenere la sessione attiva con One Tap Login
 Personalizzare il tuo profilo utente
 
 🎯 Features principali
+
 🔎 Cerca film in tempo reale
 
 🎞 Guarda trailer ufficiali direttamente da YouTube
@@ -62,7 +65,7 @@ Personalizzare il tuo profilo utente
 
 ⭐ Aggiungi o rimuovi film dalla tua Watchlist personale
 
-🔐 Tutto salvato su LocalStorage
+🔐 Tutto salvato su MongoDB per una gestione sicura e persistente della watchlist
 
 🎨 UI Dark Mode moderna e responsive
 
@@ -70,11 +73,16 @@ Personalizzare il tuo profilo utente
 (Facoltativo: qui puoi aggiungere degli screenshot del progetto)
 
 💎 Credits
+
 TMDb per l'incredibile database di film
 
 Google OAuth per l'autenticazione facile
 
 React.js per la magia frontend
+
+MongoDB per la gestione sicura dei dati degli utenti
+
+Express per gestire il backend e le API
 
 🤝 Contribuire
 Se vuoi migliorare il progetto, sentiti libero di fare una Pull Request o aprire una Issue! 🚀
