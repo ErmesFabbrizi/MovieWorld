@@ -1,95 +1,123 @@
-🎬 Movie World - La Tua App di Film Preferita! 🍿
-Benvenuto in Movie World, la tua piattaforma per scoprire, cercare, salvare e guardare trailer dei film più famosi del mondo! 🌍🎥
+# 🎬 Movie World – La Tua App di Film Preferita! 🍿
 
-🚀 Tecnologie Utilizzate
+Benvenuto in **Movie World**, una web app full-stack che ti consente di **cercare**, **scoprire**, **guardare trailer** e **salvare** i tuoi film preferiti. L’interfaccia è ispirata a Netflix, con autenticazione tramite Google e gestione della Watchlist persistente.
 
-Tecnologia	Descrizione
-🛠 React.js	Libreria principale per costruire l'applicazione
-🎨 Bootstrap 5	Styling responsive e moderno
-📡 Axios	Per effettuare chiamate API verso TMDb
-🛡 @react-oauth/google	Login rapido con Google
-🔑 JWT Decode	Decodifica sicura delle credenziali Google
-🎬 The Movie Database API (TMDb)	Per ottenere dati su film, trailer, cast
-🧠 React Router	Navigazione tra home e pagina dettaglio film
-🐱‍🏍 LocalStorage	Per salvare la watchlist utente
-🎙 React Icons	Icone moderne e intuitive
-✨ Custom CSS	Stile personalizzato, ispirato a Netflix
-🌐 MongoDB	Database NoSQL per salvare i dati dell'utente e della watchlist
-🖥 Express	Framework web per gestire le richieste e le API del backend
+## 🚀 Demo
 
-📦 Come Clonare il Progetto
-Segui questi semplici passi! 🚶‍♂️👇
+Guarda la demo video per vedere l'app in azione!  
+👉 [Demo su LinkedIn] https://www.linkedin.com/posts/ermes-fabbrizi-435390314_react-mongodb-nodejs-activity-7325184219066896384-2UFB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_KP2kB2jOJXgfzXdX-6tl03Upq-UiOE2U
 
-Clona il repository
+
+## 🧰 Tecnologie Utilizzate
+
+### Frontend
+
+- ⚛️ React.js
+- 🎨 Bootstrap 5
+- 🔁 React Router
+- 📡 Axios
+- 🎙 React Icons
+- ✨ Custom CSS (stile tipo Netflix)
+- 📍 LocalStorage (per la Watchlist)
+
+### Backend
+
+- ⚙️ Node.js
+- 🖥 Express.js
+- 🌐 MongoDB
+- 🔐 JWT + Google OAuth 2.0
+
+### API
+
+- 🎬 [TMDb (The Movie Database)](https://www.themoviedb.org/documentation/api)
+
+---
+
+## ✨ Features
+
+- 🔍 Ricerca film in tempo reale tramite TMDb
+- 🎞 Guarda trailer ufficiali integrati da YouTube
+- ⭐ Aggiungi/rimuovi film dalla tua Watchlist personale
+- 👥 Visualizza dettagli completi e cast
+- 👤 Login rapido e sicuro con Google
+- 🌙 Interfaccia moderna in Dark Mode
+- 💾 Dati utente e Watchlist salvati su MongoDB
+
+---
+
+## 📦 Come Clonare il Progetto
+
+```bash
+# Clona il repository
 git clone https://github.com/tuo-username/movie-world.git
 
-Entra nella cartella del progetto
+# Entra nella directory
 cd movie-world
 
-Installa tutte le dipendenze
+# Installa le dipendenze
 npm install
 
-Avvia l'app in modalità sviluppo
+# Avvia il server
 npm start
-Il progetto sarà disponibile su http://localhost:3000 🚀
+```
 
-🔑 Chiave API TMDb
-Per far funzionare il progetto devi avere una chiave API di TMDb.
-✅ In questo progetto, la chiave è già inserita (f245ddf2fa039b4ac103b86de1fc2df4).
+L'app sarà disponibile su `http://localhost:3000`
 
-Se vuoi sostituirla con la tua:
+---
 
-Registrati su TheMovieDB.org
+## 🔑 Configurazione API
 
-Crea un'API Key personale
+Per usare TMDb, è necessaria una chiave API:
 
-Modifica il valore di tmdbApiKey in App.js
+1. Registrati su [TMDb](https://www.themoviedb.org/)
+2. Ottieni una API Key
+3. Sostituisci il valore di `tmdbApiKey` in `App.js`
 
-👤 Login con Google
-Il login è gestito tramite Google OAuth 2.0.
-Puoi:
+> ⚠️ In fase di testing, una chiave demo è già inclusa (`f245ddf2fa039b4ac103b86de1fc2df4`)
 
-Accedere con un clic
+---
 
-Mantenere la sessione attiva con One Tap Login
+## 🔐 Login con Google
 
-Personalizzare il tuo profilo utente
+- OAuth 2.0 tramite `@react-oauth/google`
+- One Tap Login abilitato
+- Profilo utente gestito lato client + MongoDB
 
-🎯 Features principali
+---
 
-🔎 Cerca film in tempo reale
+## 🤝 Contribuire
 
-🎞 Guarda trailer ufficiali direttamente da YouTube
+Vuoi contribuire? Sei il benvenuto!
 
-🎭 Visualizza cast e dettagli completi
+1. Fai un fork del progetto
+2. Crea un nuovo branch (`git checkout -b feature/NuovaFeature`)
+3. Fai le modifiche e il commit (`git commit -m 'Aggiunta nuova feature'`)
+4. Fai push al branch (`git push origin feature/NuovaFeature`)
+5. Apri una Pull Request
 
-⭐ Aggiungi o rimuovi film dalla tua Watchlist personale
+---
 
-🔐 Tutto salvato su MongoDB per una gestione sicura e persistente della watchlist
+## 📄 Licenza
 
-🎨 UI Dark Mode moderna e responsive
+Distribuito sotto licenza **MIT**. Vedi `LICENSE` per maggiori dettagli.
 
-📸 Screenshot
-(Facoltativo: qui puoi aggiungere degli screenshot del progetto)
+---
 
-💎 Credits
+## 💎 Credits
 
-TMDb per l'incredibile database di film
+- [TMDb](https://www.themoviedb.org/) – Database film
+- [Google OAuth](https://developers.google.com/identity) – Autenticazione
+- [React](https://react.dev/) – UI moderna
+- [MongoDB](https://www.mongodb.com/) – Persistenza dati
+- [Node.js](https://nodejs.org/) & [Express](https://expressjs.com/) – Backend e API
 
-Google OAuth per l'autenticazione facile
+---
 
-React.js per la magia frontend
+## 📬 Contatti
 
-MongoDB per la gestione sicura dei dati degli utenti
+Hai domande o proposte?  
+Contattami su [LinkedIn](www.linkedin.com/in/ermes-fabbrizi-435390314) o apri una Issue nel repository!
 
-Express per gestire il backend e le API
+---
 
-🤝 Contribuire
-Se vuoi migliorare il progetto, sentiti libero di fare una Pull Request o aprire una Issue! 🚀
-Ogni contributo è super apprezzato! 💖
-
-🐉 Licenza
-Questo progetto è rilasciato sotto MIT License.
-Sentiti libero di copiarlo, modificarlo e migliorarlo! 🎉
-
-Grazie per aver visitato Movie World! 🎥🐱👋
+🎥 **Grazie per aver visitato Movie World!** 👋
